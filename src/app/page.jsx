@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>홈화면</div>
+  return <div className="bg-gray300">메인입니다</div>
 }

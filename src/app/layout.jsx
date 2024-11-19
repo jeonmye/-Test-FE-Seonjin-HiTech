@@ -1,16 +1,13 @@
+import '../styles/globals.css'
+import Nav from '../components/Nav/Nav'
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-
-        <nav className="flex flex-col items-center row-start-2 gap-8 sm:items-start">
-          네브바
-        </nav>
-        <main>{children}</main>
-        <footer className="flex flex-wrap items-center justify-center row-start-3 gap-6">
-          푸터
-        </footer>
-
+        <Nav />
+        <div className="flex min-h-screen flex-col">{children}</div>
+        <footer className="flex h-16 bg-gray300">Footer</footer>
       </body>
     </html>
   )
