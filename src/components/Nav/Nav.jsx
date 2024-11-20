@@ -1,17 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import logo from '/images/logo.png'
+import Logo from '@/components/Logo/Logo'
+import { NAV_LIST } from '@/constants'
+
 
 const Nav = () => {
   return (
-    <>
-      <Image
-        src={logo}
-        alt="로고"
-        width={500}
-        height={500}></Image>
-      <div className="flex gap-5">
+<div className="flex justify-between items-center px-5 py-3">
+    <Logo size={'m'} link={false}/>
+      <nav className="flex gap-10">
         {NAV_LIST.map(items => (
           <Link
             key={items.label}
@@ -20,16 +17,10 @@ const Nav = () => {
             {items.label}
           </Link>
         ))}
-      </div>
-    </>
+      </nav>
+</div>
   )
 }
 
 export default Nav
 
-const NAV_LIST = [
-  { label: '회사소개', path: '/about' },
-  { label: '제품', path: '/product' },
-  { label: '공지사항', path: '/notice' },
-  { label: '인재채용', path: '/recuit' }
-]
