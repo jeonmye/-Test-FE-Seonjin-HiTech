@@ -6,7 +6,8 @@ export const useSwiper = () => {
 
   const goToSlide = index => {
     if (swiperRef.current) {
-      swiperRef.current.slideTo(index) // 특정 슬라이드로 이동
+      swiperRef.current.slideTo(index)
+      // 특정 슬라이드로 이동
     }
   }
 
