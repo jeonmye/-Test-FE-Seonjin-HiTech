@@ -4,3 +4,21 @@ export const NAV_LIST = [
   { label: '공지사항', path: '/notice' },
   { label: '인재채용', path: '/recuit' }
 ]
+
+export const MAIN_BANNER_CONTENT = [
+  {
+    image: 'https://picsum.photos/1920/1080?random=1',
+    title: 'title1',
+    subTitle: 'subTitle1'
+  },
+  {
+    image: 'https://picsum.photos/1920/1080?random=2',
+    title: 'title2',
+    subTitle: 'subTitle2'
+  },
+  {
+    image: 'https://picsum.photos/1920/1080?random=3',
+    title: 'title3',
+    subTitle: 'subTitle3'
+  }
+]
