@@ -8,7 +8,8 @@ const Logo = ({ size, link }) => {
     m: 110,
     l: 140,
     xl: 170,
-    xxl: 220
+    xxl: 220,
+    xxxl: 260
   }
 
   return link ? (
