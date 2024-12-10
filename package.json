@@ -1,12 +1,17 @@
 {
   "name": "my-app",
+  "homepage": "https://mellowdevteam.github.io/FE-Seonjin-HiTech",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preexport": "rimraf out",
+    "export": "next export",
+    "touch": "touch out/.nojekyll",
+    "posttouch": "touch out/_next/.nojekyll"
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.42",
