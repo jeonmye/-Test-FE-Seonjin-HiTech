@@ -10,9 +10,9 @@ export const useGetNoticeListService = () => {
 }
 
 //공지사항 글 상세조회
-export const useGetNoticeDetailService = ({ noticeId }) => {
+export const useGetNoticeDetailService = () => {
   return useQuery({
     queryKey: ['notice'],
-    queryFn: () => getNoticeDetailApi({ noticeId })
+    queryFn: () => getNoticeDetailApi()
   })
 }

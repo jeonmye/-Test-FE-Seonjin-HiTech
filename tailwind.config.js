@@ -6,11 +6,19 @@ module.exports = {
       borderRadius: {
         '4xl': '2rem'
       },
-
+      keyframes: {
+        reveal: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'translateY(0)' }
+        }
+      },
+      animation: {
+        reveal: 'reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards'
+      },
       screens: {
-        sm: { min: '360px' },
-        md: { min: '768px' },
-        lg: { min: '1280px' }
+        sm: { min: '361px' },
+        md: { min: '769px' },
+        lg: { min: '1025px' }
       },
       colors: {
         gray100: '#E8EBED',
