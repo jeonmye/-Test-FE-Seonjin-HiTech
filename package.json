@@ -11,6 +11,7 @@
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.42",
     "@tanstack/react-query": "^5.61.3",
+    "axios": "^1.7.9",
     "eslint-config-prettier": "^9.1.0",
     "next": "15.0.3",
     "prettier-plugin-tailwindcss": "^0.6.8",

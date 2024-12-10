@@ -1,12 +1,13 @@
 import apiInstance from '@/api/api'
 
 //공지사항 전체 조회
-export const getNoticeListApi = async () =>
-  await apiInstance.get('/notice').then(res => res.data)
+export const getNoticeListApi = async () => {
+  await apiInstance.get('/board').then(res => res.data)
+}
 
 //공지사항 글 상세조회
-export const getNoticeDetailApi = async ({ noticeId }) =>
-  await apiInstance.get(`/notice/${noticeId}`).then(res => res.data)
+export const getNoticeDetailApi = async () =>
+  await apiInstance.get(`/board/${12}`).then(res => res.data)
 
 //공지사항 글 작성
 export const postNoticeWriteApi = async ({ title, file, content }) =>
