@@ -1,5 +1,4 @@
 import { QueryClient, useMutation } from '@tanstack/react-query'
-import { QueryClient } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
 import {
   postNoticeWriteApi,
