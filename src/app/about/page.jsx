@@ -35,8 +35,9 @@ export default function About() {
     <div className="flex flex-col items-center gap-5">
       <div
         id="vision"
-        className="flex h-48 w-full items-center justify-center bg-red-500 text-[60px]">
-        <span className="">회사 소개</span>
+        className="bg-about relative flex h-80 w-screen items-center justify-center bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-gray-500 opacity-50"></div>
+        <span className="relative text-4xl font-bold text-white">About</span>
       </div>
       <div className="flex max-w-screen-xl flex-col items-center justify-center gap-32">
         <div className="relative flex w-full flex-col content-between gap-12 md:flex-row">

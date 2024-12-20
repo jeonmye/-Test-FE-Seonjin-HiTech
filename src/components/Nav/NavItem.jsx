@@ -23,7 +23,7 @@ const NavItem = ({ item, navRef }) => {
                   navRef
                 )
               }
-              className="block cursor-pointer px-4 py-2 hover:bg-gray-200">
+              className="block cursor-pointer px-4 py-2 font-normal text-gray-600 hover:bg-gray-200">
               {submenuItem.label}
             </div>
           ))}
@@ -51,15 +51,14 @@ const NavItem = ({ item, navRef }) => {
             className="text-gray400"
           />
         </div>
-        <div
-         className="absolute left-0 top-full hidden w-40 bg-white shadow-md group-hover:block">
+        <div className="absolute left-0 top-full hidden w-40 bg-white shadow-md group-hover:block">
           {item.submenu.map(submenuItem => (
             <div
               key={submenuItem.label}
               onClick={() =>
                 alert(`번역을 ${submenuItem.language}로 실행합니다.`)
               }
-              className="block cursor-pointer px-4 py-2 hover:bg-gray-200">
+              className="block cursor-pointer px-4 py-2 font-normal text-gray-600 hover:bg-gray-200">
               {submenuItem.label}
             </div>
           ))}

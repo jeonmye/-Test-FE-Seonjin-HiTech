@@ -2,6 +2,9 @@
 
 import { useRef } from 'react'
 import { useOnePageMotionScroll } from '@/hooks/useOnePageMotionScroll'
+import { useEffect } from 'react'
+import useViewport from '@/hooks/useViewport'
+
 import MainPage1 from '@/containers/Main/MainPage1'
 import MainPage2 from '@/containers/Main/MainPage2'
 import MainPage3 from '@/containers/Main/MainPage3'

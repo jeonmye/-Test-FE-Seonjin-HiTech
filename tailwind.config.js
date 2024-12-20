@@ -3,9 +3,13 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
-      borderRadius: {
-        '4xl': '2rem'
+      fontFamily: {
+        sans: ['"Noto Sans KR"', 'sans-serif']
       },
+      backgroundImage: {
+        about: "url('/images/about/about_01.png')"
+      },
+
       keyframes: {
         reveal: {
           '0%': { transform: 'translateY(100%)' },

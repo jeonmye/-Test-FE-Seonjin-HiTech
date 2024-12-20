@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '../../../public/images/logo.png'
 
 const Logo = ({ size, link }) => {
   const sizeVariants = {
@@ -15,17 +14,19 @@ const Logo = ({ size, link }) => {
   return link ? (
     <Link href="/">
       <Image
-        src={logo}
+        src="/images/logo.png"
         alt="선진하이텍"
         width={sizeVariants[size]}
+        height={sizeVariants[size]}
         priority={true}
       />
     </Link>
   ) : (
     <Image
-      src={logo}
+      src="/images/logo.png"
       alt="선진하이텍"
       width={sizeVariants[size]}
+      height={sizeVariants[size]}
       priority={true}
     />
   )
