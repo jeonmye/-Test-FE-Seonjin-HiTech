@@ -23,7 +23,7 @@ const NavItem = ({ item, navRef }) => {
                   navRef
                 )
               }
-              className="block cursor-pointer px-4 py-2 font-normal text-gray-600 hover:bg-gray-200">
+              className="block cursor-pointer px-4 py-2 font-normal text-gray600 hover:bg-gray-200">
               {submenuItem.label}
             </div>
           ))}

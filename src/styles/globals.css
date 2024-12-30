@@ -7,6 +7,18 @@
   --foreground: #171717;
 }
 
+@layer utilities {
+  /* 처음엔 투명 + 살짝 아래 위치 */
+  .fade-in-section {
+    @apply translate-y-5 opacity-0 transition-all duration-700 ease-out;
+  }
+
+  /* 화면에 보여진 뒤에는 불투명 + 제자리 */
+  .fade-in-section-show {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
