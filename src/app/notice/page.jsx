@@ -13,16 +13,16 @@ export default function BoardList() {
       const initialPosts = [
         {
           id: 1,
-          title: '캠로커스 JUJIA 중국 본사 관련 기사',
-          content: '공지사항입니다요',
+          title: '선진하이텍 공지사항',
+          content: '내용입니다',
           date: '2024-11-26',
           author: '관리자',
           view: 74
         },
         {
           id: 2,
-          title: '222캠로커스 JUJIA 중국 본사 관련 기사',
-          content: '공지사항입니다요',
+          title: '선진하이텍 공지사항2',
+          content: '내용입니다',
           date: '2024-11-26',
           author: '관리자',
           view: 74
@@ -36,8 +36,8 @@ export default function BoardList() {
   }, [])
 
   return (
-    <div className="mx-auto max-w-4xl p-4">
-      <h1 className="mb-6 text-3xl font-bold">공지사항</h1>
+    <div className="mx-auto mt-10 flex max-w-4xl flex-col justify-center p-4">
+      {/* 상단 헤더 */}
       <div className="mb-4 flex items-center justify-between">
         <span>총 {posts.length}건</span>
         <Link
@@ -46,6 +46,7 @@ export default function BoardList() {
           글쓰기
         </Link>
       </div>
+      {/* 게시판 헤더 */}
       <div className="grid grid-cols-12 border-b border-t border-gray-300 text-center font-bold">
         <div className="col-span-1 py-2">번호</div>
         <div className="col-span-6 py-2">제목</div>
@@ -53,6 +54,7 @@ export default function BoardList() {
         <div className="col-span-2 py-2">날짜</div>
         <div className="col-span-1 py-2">조회 수</div>
       </div>
+      {/* 게시판 목록 */}
       {posts.map((post, index) => (
         <Link
           href={`/notice/${post.id}`}
