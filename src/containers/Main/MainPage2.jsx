@@ -8,9 +8,9 @@ const MainPage2 = ({ page }) => {
       <Image
         src="/images/mainBanner/main_02.png"
         alt="Background"
-        layout="fill"
         className="z-0 h-full w-auto object-cover"
         priority
+        fill
       />
       <div
         className={`absolute z-10 flex flex-col items-center text-center transition-all duration-[3500ms] ease-in-out ${

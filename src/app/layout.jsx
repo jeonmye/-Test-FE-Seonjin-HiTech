@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import Nav from '../components/Nav/Nav'
 import Providers from '@/components/Provider'
+import Footer from '@/components/Footer/Footer'
 
 export default function RootLayout({ children }) {
   return (
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
             <div className="flex min-h-screen flex-grow flex-col">
               {children}
             </div>
-            <footer className="flex h-16 bg-gray300">Footer</footer>
+            <Footer />
           </Providers>
         </div>
       </body>

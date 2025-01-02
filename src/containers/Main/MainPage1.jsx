@@ -53,8 +53,8 @@ const MainPage1 = () => {
                   src={item.image}
                   alt={item.alt}
                   className="h-full w-auto object-cover"
-                  layout="fill"
                   priority={true}
+                  fill
                 />
 
                 {/* Title and Subtitle */}
