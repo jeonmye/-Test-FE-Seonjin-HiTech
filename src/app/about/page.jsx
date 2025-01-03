@@ -1,7 +1,7 @@
 'use client'
 
 import PageTitle from '@/components/PageTitle'
-import Vision from '@/containers/About/vision'
+import Vision from '@/containers/About/Vision'
 import History from '@/containers/About/History'
 import CoreCompetence from '@/containers/About/CoreCompetence'
 import ContactUs from '@/containers/About/ContactUs'
