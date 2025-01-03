@@ -26,6 +26,8 @@ const Vision = () => {
     : ' flex max-w-[450px] flex-col items-start'
 
   return (
+    /*TODO FadeInSection -> useScrollFadeIn 으로 변경*/
+
     <div className="relative mb-64 md:mx-8 md:flex md:flex-row md:gap-8 lg:gap-16">
       <div className="absolute inset-0 m-8 bg-white opacity-50 md:hidden"></div>
       <div className={`${aboutLeftSectionStyle}`}>

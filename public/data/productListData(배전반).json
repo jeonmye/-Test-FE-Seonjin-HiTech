@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "category": "배전반",
+    "title": "특고압 배전반",
+    "thumbnail": "https://picsum.photos/300/250",
+    "content": "내용입니다",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 2,
+    "category": "배전반",
+    "title": "고압배전반",
+    "thumbnail": "https://picsum.photos/300/300",
+    "content": "내용입니다",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 3,
+    "category": "배전반",
+    "title": "저압배전반",
+    "thumbnail": "https://picsum.photos/400/350",
+    "content": "내용입니다",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 4,
+    "category": "배전반",
+    "title": "전동기제어반",
+    "thumbnail": "https://picsum.photos/500/450",
+    "content": "내용입니다",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 5,
+    "category": "배전반",
+    "title": "분전반반",
+    "thumbnail": "https://picsum.photos/450/350",
+    "content": "내용입니다",
+    "created_at": "2025.01.03"
+  }
+]

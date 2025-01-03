@@ -14,11 +14,11 @@ export const NAV_LIST = [
   },
   {
     label: '제품',
-    path: '/product',
+    path: '/productResistor',
     submenu: [
-      { label: '저항기', path: '/product/a' },
-      { label: '배전반', path: '/product/b' },
-      { label: '전력품질개선', path: '/product/b' }
+      { label: '저항기', path: '/productResistor' },
+      { label: '배전반', path: '/productSwitchboard' },
+      { label: '전력품질개선', path: '/productPqi' }
     ]
   },
   { label: '공지사항', path: '/notice' },
@@ -57,4 +57,10 @@ export const MAIN_BANNER_CONTENT = [
     title: 'title3',
     subTitle: 'subTitle3'
   }
+]
+
+export const PORODUCT_SUB_NAV_LIST = [
+  { label: '저항기', path: '/productResistor' },
+  { label: '배전반', path: '/productSwitchboard' },
+  { label: '전력품질개선', path: '/productPqi' }
 ]

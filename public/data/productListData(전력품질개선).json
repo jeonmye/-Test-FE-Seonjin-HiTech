@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "category": "전력품질개선",
+    "title": "수동형 고조파 필터장치치",
+    "thumbnail": "https://picsum.photos/400/500",
+    "content": "<p>p태그입니다</p>",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 1,
+    "category": "전력품질개선",
+    "title": "정지형 무효전력 보상기기",
+    "thumbnail": "https://picsum.photos/600/500",
+    "content": "<p>p태그입니다</p>",
+    "created_at": "2025.01.03"
+  },
+  {
+    "id": 2,
+    "category": "전력품질개선",
+    "title": "실시간 무효전력 보상기기",
+    "thumbnail": "https://picsum.photos/450/350",
+    "content": "<p>p태그입니다</p>",
+    "created_at": "2025.01.03"
+  }
+]

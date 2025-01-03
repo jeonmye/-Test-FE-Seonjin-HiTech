@@ -59,6 +59,8 @@ module.exports = {
         'headL-bold': ['38px', { fontWeight: '700', lineHeight: '33px' }],
         headXL: ['44px', { fontWeight: '500', lineHeight: '33px' }],
         'headXL-bold': ['44px', { fontWeight: '700', lineHeight: '33px' }],
+        head2XL: ['54px', { fontWeight: '500', lineHeight: '33px' }],
+        'head2XL-bold': ['54px', { fontWeight: '700', lineHeight: '33px' }],
         title: ['21px', { fontWeight: '500', lineHeight: '30px' }],
         'title-bold': ['21px', { fontWeight: '600', lineHeight: '30px' }],
         'title-extra-bold': ['21px', { fontWeight: '700', lineHeight: '30px' }],

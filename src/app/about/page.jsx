@@ -12,10 +12,10 @@ export default function About() {
     <div className="flex w-full flex-col items-center">
       <PageTitle
         bg={about_01}
-        title={'About'}
-        textSizeClassName="text-headXL-bold"
+        title={'회사소개'}
+        textSizeClassName="text-head2XL-bold"
       />
-      <div className="flex flex-col items-center justify-center lg:mx-24">
+      <div className="mt-32 flex flex-col items-center justify-center lg:mx-24">
         <Vision />
         <History />
       </div>

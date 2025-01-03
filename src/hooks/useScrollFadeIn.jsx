@@ -1,3 +1,4 @@
+'use client'
 import { useRef, useEffect, useCallback } from 'react'
 
 const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {

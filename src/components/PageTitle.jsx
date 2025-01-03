@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import useZoomInEffect from '@/hooks/useZoomInEffect'
 import useScrollFadeIn from '@/hooks/useScrollFadeIn'
@@ -9,7 +10,7 @@ const PageTitle = ({ bg, title, textSizeClassName }) => {
   return (
     <div
       id="vision"
-      className="relative mb-8 flex h-[420px] w-screen items-center justify-center overflow-hidden md:mb-48">
+      className="relative flex h-[420px] w-screen items-center justify-center overflow-hidden">
       <Image
         {...zoomInIcon1}
         src={bg}
