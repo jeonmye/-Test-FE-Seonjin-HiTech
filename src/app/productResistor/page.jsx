@@ -7,6 +7,7 @@ import Image from 'next/image'
 import SubNav from '@/components/SubNav'
 import resistorTitleImg from '../../../public/images/product/저항기/resistor_02.jpg'
 import mockData from '../../../public/data/productListData(저항기)'
+import mockData2 from '../../../public/data/productListData(배전반)'
 
 export default function ProductResistor() {
   const pathname = usePathname()
