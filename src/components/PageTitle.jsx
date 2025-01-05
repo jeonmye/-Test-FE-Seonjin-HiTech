@@ -4,7 +4,7 @@ import useZoomInEffect from '@/hooks/useZoomInEffect'
 import useScrollFadeIn from '@/hooks/useScrollFadeIn'
 
 const PageTitle = ({ bg, title, textSizeClassName }) => {
-  const zoomInIcon1 = useZoomInEffect(5, 0, 1)
+  const zoomInIcon1 = useZoomInEffect(5, 0, 1, 'scroll')
   const fadeInUp1 = useScrollFadeIn('up', 1, 0.2)
 
   return (

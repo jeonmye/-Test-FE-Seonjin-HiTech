@@ -1,10 +1,8 @@
 import Image from 'next/image'
 import useScrollFadeIn from '@/hooks/useScrollFadeIn'
-import useZoomInEffect from '@/hooks/useZoomInEffect'
 import useViewport from '@/hooks/useViewport'
 
 const CoreCompetence = () => {
-  const { isMobile, isDesktop } = useViewport()
   const fadeInLeft5 = useScrollFadeIn('left', 1.5, 0.2)
   const fadeInLeft6 = useScrollFadeIn('left', 1.5, 0.4)
   const fadeInLeft7 = useScrollFadeIn('left', 1.5, 0.6)
