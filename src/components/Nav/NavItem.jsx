@@ -11,7 +11,7 @@ const NavItem = ({ item, navRef }) => {
   if (item.submenu && item.label !== '번역') {
     return (
       <div className="group relative">
-        <Link href={item.path}>{item.label}</Link>
+        <Link href={item.path || '#'}>{item.label}</Link>
         <div className="absolute left-0 top-full hidden w-40 bg-white shadow-md group-hover:block">
           {item.submenu.map(submenuItem => (
             <div
@@ -35,7 +35,7 @@ const NavItem = ({ item, navRef }) => {
   if (item.label === '브로셔 다운로드') {
     return (
       <a
-        href="http://seonjinhitech.co.kr/wp-content/themes/master/pdf/SEONJIN Hi-Tech Brochure_KR.pdf"
+        href="http://seonjinhitech.co.kr/wp-content/themes/master/pdf/SEONJIN%20Hi-Tech%20Brochure_KR.pdf"
         download>
         {item.label}
       </a>

@@ -25,7 +25,7 @@ export default function ProductResistor() {
           pathname={pathname}
         />
       </div>
-      <div className="mx-auto mt-32 grid w-full max-w-[1280px] grid-cols-1 gap-20 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto mt-32 grid w-full max-w-[1280px] grid-cols-1 gap-20 px-10 sm:grid-cols-2 lg:grid-cols-3">
         {mockData.map(data => (
           <Card
             key={data.id}

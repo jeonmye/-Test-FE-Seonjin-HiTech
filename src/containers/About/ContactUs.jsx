@@ -25,7 +25,9 @@ const ContactUs = () => {
   // }
 
   return (
-    <section className="relative h-full w-full bg-about04 bg-cover bg-center py-32 text-white">
+    <section
+      id="contact"
+      className="relative h-full w-full bg-about04 bg-cover bg-center py-32 text-white">
       <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
       <div className="relative mx-8 flex justify-center sm:flex-row sm:items-stretch">
         <div className="flex w-full max-w-[1280px] flex-col items-center">

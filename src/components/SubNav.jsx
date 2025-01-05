@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const SubNav = ({ navList, pathname }) => {
   return (
-    <div className="flex h-14 w-full items-center justify-center border-b-2">
+    <div className="flex h-14 w-full items-center justify-center border-b-2 px-4">
       <div className="flex h-full w-full max-w-[500px] items-center justify-between">
         {navList.map(item => (
           <div
