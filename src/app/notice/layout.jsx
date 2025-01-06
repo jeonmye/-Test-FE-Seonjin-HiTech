@@ -8,7 +8,6 @@ export default function NoticeLayout({ children }) {
 
 const DefaultLayout = ({ children }) => (
   <div className="w-full">
-    {' '}
     <PageTitle
       title="공지사항"
       textSizeClassName={'text-head2XL-bold'}

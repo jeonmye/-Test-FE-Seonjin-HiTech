@@ -1,21 +1,19 @@
+'use client'
+
 import '../styles/globals.css'
-import Nav from '../components/Nav/Nav'
 import Providers from '@/components/Provider'
-import Footer from '@/components/Footer/Footer'
+import { RecoilRoot } from 'recoil'
+import RootPage from './RootPage'
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="max-w-full">
-        <div className="overflow-x-clip">
+        <RecoilRoot>
           <Providers>
-            <Nav />
-            <div className="flex min-h-screen flex-grow flex-col">
-              {children}
-            </div>
-            <Footer />
+            <RootPage>{children}</RootPage>
           </Providers>
-        </div>
+        </RecoilRoot>
       </body>
     </html>
   )

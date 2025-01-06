@@ -1,8 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
 import dynamic from 'next/dynamic'
+import { imageHandler } from '../../utils/ReactQuillImageHandler'
 
 // React Quill New 동적 로드
 const ReactQuill = dynamic(() => import('react-quill-new'), { ssr: false })
@@ -51,6 +52,8 @@ const CustomToolbar = () => (
 )
 
 export default function WriteNotice() {
+  const quillRef = useRef(null)
+
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
   const [file, setFile] = useState(null) // 첨부파일 상태
@@ -86,11 +89,16 @@ export default function WriteNotice() {
     router.push('/notice')
   }
 
-  const modules = {
-    toolbar: {
-      container: '#custom-toolbar' // 커스텀 툴바 ID 연결
+  const modules = useMemo(() => {
+    return {
+      toolbar: {
+        container: '#custom-toolbar', // 커스텀 툴바 ID 연결
+        handlers: {
+          image: imageHandler(quillRef)
+        }
+      }
     }
-  }
+  }, [quillRef])
 
   const formats = [
     'font',
@@ -128,6 +136,7 @@ export default function WriteNotice() {
           {/* 커스텀 툴바 */}
           <CustomToolbar />
           <ReactQuill
+            ref={quillRef}
             value={content}
             onChange={setContent}
             modules={modules}

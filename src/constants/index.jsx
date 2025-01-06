@@ -64,3 +64,14 @@ export const PORODUCT_SUB_NAV_LIST = [
   { label: '배전반', path: '/productSwitchboard' },
   { label: '전력품질개선', path: '/productPqi' }
 ]
+
+export const ADMIN_NAV_LIST = [
+  { label: '공지사항 관리', path: '/admin/notice' },
+  { label: '공지사항 상세', path: '/admin/notice/{id}' },
+  { label: '공지사항 생성', path: '/admin/notice/create' },
+  { label: '공지사항 수정', path: '/admin/notice/edit' },
+  { label: '제품 관리', path: '/admin/product' },
+  { label: '제품 상세', path: '/admin/product/{id}/edit' },
+  { label: '제품 생성', path: '/admin/product/create' },
+  { label: '제품 수정', path: '/admin/notice/{id}/edit' }
+]
