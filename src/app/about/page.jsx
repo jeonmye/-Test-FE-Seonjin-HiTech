@@ -15,7 +15,7 @@ export default function About() {
         title={'회사소개'}
         textSizeClassName="text-head2XL-bold"
       />
-      <div className="mt-32 flex flex-col items-center justify-center lg:mx-24">
+      <div className="mt-32 flex max-w-[1280px] flex-col items-center justify-center lg:mx-24">
         <Vision />
         <History />
       </div>

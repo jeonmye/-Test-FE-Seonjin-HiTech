@@ -10,7 +10,8 @@ module.exports = {
         about01: "url('/images/about/about_01.png')",
         about02: "url('/images/about/about_02.png')",
         about03: "url('/images/about/about_03.png')",
-        about04: "url('/images/about/about_04.jpg')"
+        about04: "url('/images/about/about_04.jpg')",
+        historyBg: "url('/images/about/history_bg.png')"
       },
 
       keyframes: {
@@ -64,9 +65,12 @@ module.exports = {
         'headXL-bold': ['44px', { fontWeight: '700', lineHeight: '45px' }],
         head2XL: ['54px', { fontWeight: '500', lineHeight: '50px' }],
         'head2XL-bold': ['54px', { fontWeight: '700', lineHeight: '50px' }],
+        head3XL: ['62px', { fontWeight: '500', lineHeight: '72px' }],
+        'head3XL-bold': ['62px', { fontWeight: '700', lineHeight: '72px' }],
         title: ['21px', { fontWeight: '500', lineHeight: '34px' }],
+        'title-thin': ['21px', { fontWeight: '400', lineHeight: '34px' }],
         'title-bold': ['21px', { fontWeight: '600', lineHeight: '34px' }],
-        'title-extra-bold': ['21px', { fontWeight: '700', lineHeight: '30px' }],
+        'title-extra-bold': ['21px', { fontWeight: '800', lineHeight: '30px' }],
         subTitle: ['18px', { fontWeight: '500', lineHeight: '30px' }],
         'subTitle-bold': ['18px', { fontWeight: '600', lineHeight: '30px' }],
         'subTitle-extra-bold': [
