@@ -45,30 +45,33 @@ module.exports = {
         gray600: '#26282B'
       },
       fontSize: {
-        bodyXS: ['12px', { fontWeight: '400', lineHeight: '24px' }],
+        bodyXS: ['12px', { fontWeight: '400', lineHeight: '20px' }],
         'bodyXS-bold': ['12px', { fontWeight: '500', lineHeight: '20px' }],
         bodyS: ['14px', { fontWeight: '400', lineHeight: '26px' }],
         'bodyS-bold': ['14px', { fontWeight: '500', lineHeight: '26px' }],
+        'bodyS-extra-bold': ['14px', { fontWeight: '700', lineHeight: '26px' }],
         bodyM: ['16px', { fontWeight: '400', lineHeight: '30px' }],
         'bodyM-bold': ['16px', { fontWeight: '500', lineHeight: '30px' }],
-        bodyL: ['18px', { fontWeight: '400', lineHeight: '32px' }],
-        'bodyL-bold': ['18px', { fontWeight: '500', lineHeight: '32px' }],
+        bodyL: ['18px', { fontWeight: '400', lineHeight: '36px' }],
+        'bodyL-bold': ['18px', { fontWeight: '500', lineHeight: '36px' }],
         bodyXL: ['22px', { fontWeight: '400', lineHeight: '34px' }],
-        'bodyXL-bold': ['22px', { fontWeight: '500', lineHeight: '34px' }],
+        'bodyXL-bold': ['22px', { fontWeight: '500', lineHeight: '40px' }],
+        headM: ['28px', { fontWeight: '500', lineHeight: '33px' }],
+        'headM-bold': ['28px', { fontWeight: '700', lineHeight: '40px' }],
         headL: ['38px', { fontWeight: '500', lineHeight: '33px' }],
-        'headL-bold': ['38px', { fontWeight: '700', lineHeight: '33px' }],
-        headXL: ['44px', { fontWeight: '500', lineHeight: '33px' }],
-        'headXL-bold': ['44px', { fontWeight: '700', lineHeight: '33px' }],
-        head2XL: ['54px', { fontWeight: '500', lineHeight: '33px' }],
-        'head2XL-bold': ['54px', { fontWeight: '700', lineHeight: '33px' }],
-        title: ['21px', { fontWeight: '500', lineHeight: '30px' }],
-        'title-bold': ['21px', { fontWeight: '600', lineHeight: '30px' }],
+        'headL-bold': ['38px', { fontWeight: '700', lineHeight: '40px' }],
+        headXL: ['44px', { fontWeight: '500', lineHeight: '45px' }],
+        'headXL-bold': ['44px', { fontWeight: '700', lineHeight: '45px' }],
+        head2XL: ['54px', { fontWeight: '500', lineHeight: '50px' }],
+        'head2XL-bold': ['54px', { fontWeight: '700', lineHeight: '50px' }],
+        title: ['21px', { fontWeight: '500', lineHeight: '34px' }],
+        'title-bold': ['21px', { fontWeight: '600', lineHeight: '34px' }],
         'title-extra-bold': ['21px', { fontWeight: '700', lineHeight: '30px' }],
-        subTitle: ['18px', { fontWeight: '500', lineHeight: '26px' }],
-        'subTitle-bold': ['18px', { fontWeight: '600', lineHeight: '26px' }],
+        subTitle: ['18px', { fontWeight: '500', lineHeight: '30px' }],
+        'subTitle-bold': ['18px', { fontWeight: '600', lineHeight: '30px' }],
         'subTitle-extra-bold': [
           '18px',
-          { fontWeight: '700', lineHeight: '26px' }
+          { fontWeight: '700', lineHeight: '30px' }
         ]
       }
     }

@@ -93,7 +93,7 @@ const Vision = () => {
             alt="선진하이텍"
             className="h-full w-auto object-cover"
             priority={true}
-          />{' '}
+          />
         </FadeInSection>
       )}
     </div>
