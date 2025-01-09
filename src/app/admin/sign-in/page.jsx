@@ -1,48 +1,42 @@
 'use client'
 
 import React, { useRef } from 'react'
-import { isSignedIn } from '@/state/globalState'
-import { useRecoilState } from 'recoil'
-import { useRouter } from 'next/navigation'
 import { usePostSignInService } from '@/hooks/mutations/authService'
 
 export default function SignIn() {
   const idRef = useRef(null)
   const passwordRef = useRef(null)
-  const router = useRouter()
   const signinMutation = usePostSignInService()
-  const [_, setIsSignedIn] = useRecoilState(isSignedIn)
-  console.log('signinMutation', signinMutation)
   return (
-    <div className="flex w-full flex-col items-center">
-      <input
-        type="text"
-        ref={idRef}
-        placeholder="id"
-      />
-
-      <input
-        type="text"
-        ref={passwordRef}
-        placeholder="password"
-      />
-      <button
-        onClick={() =>
-          signinMutation.mutate({
-            id: idRef.current.value,
-            password: passwordRef.current.value
-          })
-        }>
-        로그인
-      </button>
+    <div
+      className="flex w-full flex-col items-center"
+      p-4>
+      <div className="flex flex-col items-end rounded-md border border-gray-300 p-4">
+        <input
+          className="rounded-md border border-gray-400 p-1"
+          type="text"
+          ref={idRef}
+          placeholder="id"
+        />
+        <div className="h-2" />
+        <input
+          className="rounded-md border border-gray-400 p-1"
+          type="text"
+          ref={passwordRef}
+          placeholder="password"
+        />
+        <div className="h-4" />
+        <button
+          className="text-gray-400"
+          onClick={() =>
+            signinMutation.mutate({
+              id: idRef.current.value,
+              password: passwordRef.current.value
+            })
+          }>
+          로그인
+        </button>
+      </div>
     </div>
   )
-}
-
-const encode = async value => {
-  const encoder = new TextEncoder()
-  const data = encoder.encode(value)
-  const hashBuffer = await crypto.subtle.digest('SHA-256', data)
-  const hashArray = Array.from(new Uint8Array(hashBuffer))
-  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('')
 }

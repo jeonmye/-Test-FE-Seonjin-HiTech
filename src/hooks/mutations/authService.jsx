@@ -1,3 +1,5 @@
+'use client'
+
 import { QueryClient, useMutation } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
 import { postSignInApi } from '@/api/auth'

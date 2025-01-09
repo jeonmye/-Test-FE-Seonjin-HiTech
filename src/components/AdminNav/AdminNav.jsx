@@ -1,10 +1,10 @@
-'use client'
-
 import React from 'react'
 import Logo from '@/components/Logo/Logo'
 import AdminNavItem from './AdminNavItem'
+import { useRouter } from 'next/navigation'
 
 const AdminNav = () => {
+  const router = useRouter()
   return (
     <div className="col flex h-full max-w-40 flex-col items-center justify-between bg-orange-300 py-8">
       <div>
@@ -34,7 +34,12 @@ const AdminNav = () => {
           />
         </div>
       </div>
-      <div className="align flex w-full flex-col items-center py-4 text-white">
+      <div
+        className="align flex w-full cursor-pointer flex-col items-center py-4 text-white"
+        onClick={() => {
+          localStorage.removeItem('token')
+          router.push('/admin/sign-in')
+        }}>
         로그아웃
       </div>
     </div>
