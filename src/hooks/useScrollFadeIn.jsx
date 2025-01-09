@@ -1,4 +1,4 @@
-'use client '
+'use client'
 import { useRef, useEffect, useCallback } from 'react'
 
 const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
@@ -7,7 +7,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
   const handleDirection = name => {
     switch (name) {
       case 'up':
-        return 'translate3d(0, 50%, 0)'
+        return 'translate3d(0, 30%, 0)'
       case 'down':
         return 'translate3d(0, -50%, 0)'
       case 'left':
@@ -25,7 +25,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       if (entry.isIntersecting && current) {
         current.style.transitionProperty = 'all'
         current.style.transitionDuration = `${duration}s`
-        current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.2, 1)'
+        current.style.transitionTimingFunction = 'cubic-bezier(0, 0, 0.4, 1)'
         current.style.transitionDelay = `${delay}s`
         current.style.opacity = 1
         current.style.transform = 'translate3d(0, 0, 0)'

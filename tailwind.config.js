@@ -48,15 +48,25 @@ module.exports = {
       fontSize: {
         bodyXS: ['12px', { fontWeight: '400', lineHeight: '20px' }],
         'bodyXS-bold': ['12px', { fontWeight: '500', lineHeight: '20px' }],
+        'bodyXS-extra-bold': [
+          '12px',
+          { fontWeight: '700', lineHeight: '20px' }
+        ],
         bodyS: ['14px', { fontWeight: '400', lineHeight: '26px' }],
         'bodyS-bold': ['14px', { fontWeight: '500', lineHeight: '26px' }],
         'bodyS-extra-bold': ['14px', { fontWeight: '700', lineHeight: '26px' }],
         bodyM: ['16px', { fontWeight: '400', lineHeight: '30px' }],
         'bodyM-bold': ['16px', { fontWeight: '500', lineHeight: '30px' }],
+        'bodyM-extra-bold': ['16px', { fontWeight: '700', lineHeight: '30px' }],
         bodyL: ['18px', { fontWeight: '400', lineHeight: '36px' }],
         'bodyL-bold': ['18px', { fontWeight: '500', lineHeight: '36px' }],
+        'bodyL-extra-bold': ['18px', { fontWeight: '700', lineHeight: '36px' }],
         bodyXL: ['22px', { fontWeight: '400', lineHeight: '34px' }],
         'bodyXL-bold': ['22px', { fontWeight: '500', lineHeight: '40px' }],
+        'bodyXL-extra-bold': [
+          '22px',
+          { fontWeight: '700', lineHeight: '40px' }
+        ],
         headM: ['28px', { fontWeight: '500', lineHeight: '33px' }],
         'headM-bold': ['28px', { fontWeight: '700', lineHeight: '40px' }],
         headL: ['38px', { fontWeight: '500', lineHeight: '33px' }],
