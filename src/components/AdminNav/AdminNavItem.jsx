@@ -1,10 +1,13 @@
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 
 const AdminNavItem = ({ title, path }) => {
+  const pathname = usePathname()
   const router = useRouter()
   return (
     <div
-      className="flex cursor-pointer flex-col items-center justify-center py-4 text-white"
+      className={`cursor-pointer px-4 py-3 text-center ${
+        pathname == path ? 'bg-sky-950 text-white' : 'bg-transparent text-white'
+      }`}
       onClick={() => {
         router.push(path)
       }}>

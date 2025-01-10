@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation'
 const AdminNav = () => {
   const router = useRouter()
   return (
-    <div className="col flex h-full max-w-40 flex-col items-center justify-between bg-orange-300 py-8">
+    <div className="col flex h-full max-w-52 flex-col items-center justify-between bg-gray400 py-8">
       <div>
         <div className="px-8">
           <Logo
@@ -29,7 +29,7 @@ const AdminNav = () => {
             path="/admin/brochure"
           />
           <AdminNavItem
-            title="회사연력 관리"
+            title="회사연혁 관리"
             path="/admin/company-history"
           />
         </div>
